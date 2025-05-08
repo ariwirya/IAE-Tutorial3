@@ -8,7 +8,7 @@ COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Salin kode aplikasi dari subdirektori user_service di dalam context
-COPY user_service/. . 
+COPY . . 
 
 EXPOSE 5001
 CMD ["python", "app.py"]
